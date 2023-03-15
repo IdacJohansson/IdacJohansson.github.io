@@ -1,0 +1,162 @@
+
+/*GENERAL*/
+
+html{
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+/*NAV-MENUE*/
+
+    .navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fffefe;
+  }
+
+.link-home,.link-portfolio,.link-contact {
+    display: block; 
+    color: rgb(11, 10, 10);
+    text-align:center;
+    padding: 20px 20px;
+    text-decoration: none;
+    float:left; 
+    position: relative;
+    left: 41%;
+  }
+
+a:hover:not(.link-home) {
+    background-color: #de9f9f;
+  }  
+
+.link-home {
+    background-color:#a7ecd3;
+  }  
+
+
+/*LAYOUT*/
+
+.grid-container-twoColumns{
+    display: grid;
+    align-items:center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2px; 
+    
+}
+.transperant{
+  background-color: #5e5b5bc8;
+}
+
+.header{
+    background-color: #777;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+  } 
+
+
+/*PAGE: INDEX (HOME)*/
+
+.index-body{ 
+    background-image: url("/Users/ida/Visual Studio/portfolio/image/technology-capicity50.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-ida{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 2%; /*justerar upp och ner*/
+    padding: 5%;
+    margin-inline-start: 50px;
+    margin-inline-end: 50px;
+    
+}
+.text{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-align:left;
+    margin-inline-start: 100px;
+    margin-inline-end: 100px;
+}
+
+
+
+/*PAGE: PORTFOLIO*/
+
+.portfolio-body{
+  background-image: url("/Users/ida/Visual Studio/portfolio/image/technology-capicity50.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-lable{
+    font-weight:bold;  
+    font-size:large; 
+    text-align: center;
+    color: #fffefe;
+}
+p.github-info {
+  text-align: center;
+}
+/*GALLERY*/
+
+.column {
+  color: rgb(255, 255, 255);
+  float: left;
+  width: 30%;
+  padding: 3px;
+  position: relative;
+  left: 7%;
+}
+.gallery-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+div.gallery-row img{
+  width: 80%;
+}
+a{
+  text-decoration: none;
+  color: #a7ecd3;
+}
+p{
+  color: rgb(255, 255, 255);
+}
+
+
+/*PAGE: CONTACT*/
+
+.contact-body{
+    background-image: url("/Users/ida/Visual Studio/portfolio/image/technology-capicity50.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contactList{ 
+    font-size: 20px;
+    text-align:left;
+    margin-inline-start: 25%;
+    list-style: none;
+    padding: 0;
+    color: rgb(255, 255, 255); 
+    
+}
+.map{
+    width: 100%; 
+}
+.map-frame{
+    width: 80%; 
+    height: 500px; 
+    position: relative;
+    top: 0; 
+}
